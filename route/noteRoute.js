@@ -1,11 +1,9 @@
 var express=require('express');
-var route=express.Router();
+var router=express.Router();
+var noteController=require('../controller/noteController')
 
 
-
-route.get('/notes',(req,res)=>{
-    res.send("get all notes");
-});
+router.get('/notes',noteController.getAllNotes);
 
 
-module.exports = route;
+module.exports = router;
