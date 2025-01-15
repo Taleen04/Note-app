@@ -1,0 +1,3 @@
+//setup project (create folder note app)
+//npm init from cmd
+//add dependencies (express,bable , cors,body parser)
