@@ -1,7 +1,9 @@
 var express=require('express');
 var cors=require('cors');
 var app=express();
+var noteRoute=require('./route/noteRoute')
 app.use(cors());
+
 
 var bodyParser=require('body-parser');
 app.use(bodyParser.urlencoded({extended:false}));
@@ -12,8 +14,8 @@ app.get('/',(req,res)=>{
 
 })
 
-
-app.listen(3000,()=>{
-    console.log("Server is running on port 3000");
+app.use("/api/v1",noteRoute);
+app.listen(4000,()=>{
+    console.log("Server is running on port 4000");
 }    
 );
