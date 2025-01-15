@@ -1,5 +1,5 @@
-exports.getAllNotes = (req, res) => {
-    res.send("get all notes");
+exports.getAllNotess = (req, res) => {
+    res.send("get all notes...");
 }
 
 

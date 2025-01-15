@@ -2,3 +2,6 @@
 //npm init from cmd
 //add package.json 
 //add dependencies (express,bable , cors,body parser)
+//create server
+//crete note routes(using path to get all notes)
+//add controller then import it in route file 
