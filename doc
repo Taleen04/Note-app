@@ -5,3 +5,5 @@
 //create server
 //crete note routes(using path to get all notes)
 //add controller then import it in route file 
+//add sequential ids package to generate unique id 
+//add memory storge package to put app data in memory 
