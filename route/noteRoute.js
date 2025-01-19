@@ -10,7 +10,7 @@ if (Array.isArray(Callbackss)) {
 } else {
     console.error('Callbackss is not an array');
     router.get('/notes', (req, res) => {
-        res.status(500).send('Internalgggggg server error');
+        res.status(500).send('Internal server error');
     });
 }
 
