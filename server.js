@@ -15,7 +15,7 @@ app.get('/',(req,res)=>{
 })
 
 app.use("/api/v1",noteRoute);
-app.listen(2000,()=>{
+app.listen(4000,()=>{
     console.log("Server is running on port 5000");
 }    
 );

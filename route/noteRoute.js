@@ -1,14 +1,14 @@
 var express = require('express');
 var router = express.Router();
 var noteController = require('../controller/noteController');
-var Callbackss = require('../handlers/getNotesHandler');
+var Callbacks = require('../handlers/getNotesHandler');
 
-// Ensure Callbackss is an array
-if (Array.isArray(Callbackss)) {
-    const allNotesCallBack = Callbackss.find(obj => obj.key === 'all').callback;
-    router.get('/notes', noteController.getAllNotes, allNotesCallBack);
+//Ensure Callbacks is an array
+if (Array.isArray(Callbacks)) {
+    const allNotesCallBack = Callbacks.find(obj => obj.key === 'all').callback;
+    router.get('/notes',noteController.getAllNotes,allNotesCallBack);
 } else {
-    console.error('Callbackss is not an array');
+    console.error('Callbacks is not an array');
     router.get('/notes', (req, res) => {
         res.status(500).send('Internal server error');
     });

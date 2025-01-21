@@ -1,5 +1,5 @@
-// Ensure Callbackss is an array
-const Callbacks = [
+// Ensure Callbacks is an array
+const myHandler = [
     {
         key: 'all',
         callback: (req, res) => {
@@ -20,4 +20,4 @@ const Callbacks = [
     }
 ];
 
-module.exports = Callbacks;
+module.exports = {myHandler};
